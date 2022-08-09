@@ -44,9 +44,9 @@ function calculateProfit(initialPriceNum, currentPriceNum, stockQuantityNum){
 
     profitMade = totalCurrent-totalInitial
 
-    profitPercentage = ((profitMade / totalInitial)* 100)
+    profitPercentage = Math.round(((profitMade / totalInitial)* 100))
 
-    outputDiv.innerText = "Congratulations! you have made  a profit of " + profitMade + " at" + profitPercentage + "%of returns"
+    outputDiv.innerText = "Congratulations! you have made  a profit of " + profitMade + " at " + profitPercentage + "% of returns"
 
     
 }
