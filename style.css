@@ -2,16 +2,16 @@
 
 
 :root {
-    --violet-50: #f5f3ff;
-    --violet-100: #ede9fe;
-    --violet-200: #ddd6fe;
-    --violet-300: #c4b5fd;
-    --violet-400: #a78bfa;
-    --violet-500: #8b5cf6;
-    --violet-600: #7c3aed;
-    --violet-700: #6d28d9;
-    --violet-800: #5b21b6;
-    --violet-900: #4c1d95;
+    --cyan-50: #ecfeff;
+    --cyan-100: #cffafe;
+    --cyan-200: #a5f3fc;
+    --cyan-300: #67e8f9;
+    --cyan-400: #22d3ee;
+    --cyan-500: #06b6d4;
+    --cyan-600: #0891b2;
+    --cyan-700: #0e7490;
+    --cyan-800: #5b21b6;
+    --cyan-900: #4c1d95;
 }
 
 body {
@@ -22,12 +22,9 @@ body {
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 2rem 1rem;
     color: white;
-    background-color: var(--violet-700);
+    background-color: var(--cyan-700);
     border-bottom-left-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
     text-align: center;
@@ -64,7 +61,7 @@ button {
     padding: 0.75rem 1.5rem;
     font-size: 1.1rem;
     color: white;
-    background-color: var(--violet-700);
+    background-color: var(--cyan-700);
     cursor: pointer;
 }
  button:hover,
