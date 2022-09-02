@@ -14,9 +14,8 @@ function checkProfitOrLoss(e){
     let stockQuantityNum = Number(stockQuantity.value)
     let currentPriceNum = Number(currentPrice.value)
 
-    if(initialPriceNum == 0 || currentPriceNum == 0 || stockQuantityNum == 0) {
-        outputDiv.innerText = "Invalid input"
-        console.log(initialPriceNum, currentPriceNum, stockQuantityNum)
+    if(initialPriceNum < 0 || currentPriceNum < 0 || stockQuantityNum < 0) {
+        outputDiv.innerText = "Invalid input. Make sure all the inputs are filled and are non zero positive numbers"
 
     } else {
         if(initialPriceNum< currentPriceNum){
