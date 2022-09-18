@@ -43,7 +43,7 @@ function calculateProfit(initialPriceNum, currentPriceNum, stockQuantityNum){
 
     profitMade = totalCurrent-totalInitial
 
-    profitPercentage = Math.round(((profitMade / totalInitial)* 100))
+    profitPercentage = ((profitMade / totalInitial)* 100).toFixed(2)
 
     outputDiv.innerText = "Congratulations! you have made  a profit of " + profitMade + " at " + profitPercentage + "% of returns"
 
@@ -56,7 +56,7 @@ function calculateLoss(initialPriceNum, currentPriceNum, stockQuantityNum){
 
     lossMade = totalInitial - totalCurrent
     
-    lossPercentage = ((lossMade / totalInitial)*100)
+    lossPercentage = ((lossMade / totalInitial)*100).toFixed(2)
 
     outputDiv.innerText = "Uh Oh! you have made a total loss of " + lossMade + " at " + lossPercentage + "% of loss percentage"
 }
